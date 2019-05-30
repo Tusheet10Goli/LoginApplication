@@ -1,14 +1,13 @@
 package com.example.loginapplication;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -18,11 +17,18 @@ public class MainActivity extends AppCompatActivity {
     private TextView tv;
     private Button bt;
     private int ctr  = 5;
+    private static final String TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Log.i(TAG, "details in " + TAG);
+        Log.d(TAG, "details in " + TAG);
+        Log.e(TAG, "details in " + TAG);
+        Log.v(TAG, "details in " + TAG);
+        Log.w(TAG, "details in " + TAG);
 
         name = (EditText) findViewById(R.id.name);
         pass = (EditText) findViewById(R.id.pass);

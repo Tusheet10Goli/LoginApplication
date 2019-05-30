@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Temporary"></activity>
+        <activity android:name=".Randomizer"></activity>
+        <activity android:name=".Temporary" />
         <activity android:name=".Calculator" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".ThirdActivity" />

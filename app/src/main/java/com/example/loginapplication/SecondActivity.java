@@ -4,17 +4,24 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.loginapplication.R;
-
 public class SecondActivity extends AppCompatActivity {
+
+    private static final String TAG = SecondActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
+        Log.i(TAG, "details in " + TAG);
+        Log.d(TAG, "details in " + TAG);
+        Log.e(TAG, "details in " + TAG);
+        Log.v(TAG, "details in " + TAG);
+        Log.w(TAG, "details in " + TAG);
 
         Button bt1  = (Button) findViewById(R.id.bt1);
         bt1.setOnClickListener(new View.OnClickListener() {
@@ -29,7 +36,7 @@ public class SecondActivity extends AppCompatActivity {
         bt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), Temporary.class);
+                Intent startIntent = new Intent(getApplicationContext(), Randomizer.class);
                 startActivity(startIntent);
             }
         });
