@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Test Code
+
         name = (EditText) findViewById(R.id.name);
         pass = (EditText) findViewById(R.id.pass);
         tv = (TextView) findViewById(R.id.tv);
