@@ -27,7 +27,8 @@ public class Calculator extends AppCompatActivity {
                 double n1 = Double.parseDouble(num1.getText().toString());
                 double n2 = Double.parseDouble(num2.getText().toString());
                 double res = n1 + n2;
-                result.setText(res + "");
+                String re = String.format("%.3f", res);
+                result.setText(re);
 
             }
         });
@@ -43,7 +44,8 @@ public class Calculator extends AppCompatActivity {
                 double n1 = Double.parseDouble(num1.getText().toString());
                 double n2 = Double.parseDouble(num2.getText().toString());
                 double res = n1 - n2;
-                result.setText(res + "");
+                String re = String.format("%.3f", res);
+                result.setText(re);
 
             }
         });
@@ -61,8 +63,12 @@ public class Calculator extends AppCompatActivity {
                 double res = n1 * n2;
                 if (n1 == 0 || n2 == 0) {
                     res = 0;
+                    result.setText(res + "");
+                } else {
+                    String re = String.format("%.3f", res);
+                    result.setText(re);
                 }
-                result.setText(res + "");
+
 
             }
         });
