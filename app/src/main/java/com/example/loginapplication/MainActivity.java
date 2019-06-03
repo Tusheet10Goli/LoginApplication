@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.i(TAG, "details in " + TAG);
-        Log.d(TAG, "details in " + TAG);
-        Log.e(TAG, "details in " + TAG);
-        Log.v(TAG, "details in " + TAG);
-        Log.w(TAG, "details in " + TAG);
+        Log.i(TAG, "Class: " + TAG + "    Package: " + this.getPackageName() );
+        Log.d(TAG, "Class: " + TAG + "    Package: " + this.getPackageName() );
+        Log.e(TAG, "Class: " + TAG + "    Package: " + this.getPackageName() );
+        Log.v(TAG, "Class: " + TAG + "    Package: " + this.getPackageName() );
+        Log.w(TAG, "Class: " + TAG + "    Package: " + this.getPackageName() );
 
         name = (EditText) findViewById(R.id.name);
         pass = (EditText) findViewById(R.id.pass);
